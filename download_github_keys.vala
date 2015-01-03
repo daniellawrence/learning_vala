@@ -32,7 +32,6 @@ async void download_github_keys(string username) {
 }
 
 public static int main(string[] args) {
-	//string username = "daniellawrence";
 	var usernames = new Gee.HashSet<string>();
 	usernames.add("daniellawrence");
 	// source to download from
@@ -44,12 +43,7 @@ public static int main(string[] args) {
 				main_loop.quit();
 			});
 	}
-	/*
-	download_github_keys.begin(("leighmaddock"), (obj, res) => {
-			download_github_keys.end(res);
-			main_loop.quit();
-	});
-	*/
+
 	main_loop.run();
 	return 0;
 }
